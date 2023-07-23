@@ -68,7 +68,7 @@ We welcome contributions from the community to make Cloneify even better! If you
 
 ## License
 
-Cloneify is open-source and licensed under the [MIT License](LICENSE).
+Cloneify is open-source.
 
 ---
 
