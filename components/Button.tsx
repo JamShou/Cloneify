@@ -15,7 +15,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         bg-green-500 
         border 
         border-transparent 
-        px-3 
+        px-5 
         py-3 
         disabled:cursor-not-allowed 
         disabled:opacity-50 
