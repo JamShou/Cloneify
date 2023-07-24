@@ -42,7 +42,8 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         h-fit 
         bg-gradient-to-b
         from-emerald-800
-        p-6`,
+        p-6
+        `,
         className
       )}
     >
@@ -54,7 +55,6 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         items-center
         justify-between"
       >
-        {""}
         <div
           className="
         hidden 
@@ -67,7 +67,8 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
             className="rounded-full 
             bg-black 
             flex 
-            items-center 
+            items-center
+            cursor-pointer 
             justify-center 
             hover:opacity-75 
             transition"
@@ -78,7 +79,8 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
             onClick={() => router.forward()}
             className="
             rounded-full 
-            bg-black flex 
+            bg-black 
+            flex 
             items-center 
             justify-center 
             hover:opacity-75 
