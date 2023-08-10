@@ -25,7 +25,7 @@ export default async function Home() {
           text-3xl
           font-semibold"
           >
-            Welcome Back TEST
+            Welcome Back
           </h1>
           <div
             className="
