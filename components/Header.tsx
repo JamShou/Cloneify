@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { HiHome } from "react-icons/hi";
@@ -11,6 +11,7 @@ import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useUser } from "@/hooks/useUser";
 import { FaUserAlt } from "react-icons/fa";
 import { toast } from "react-hot-toast";
+import { useMemo } from "react";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -32,6 +33,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
     if (error) {
       toast.error(error.message);
     } else {
+      router.push("/");
       toast.success("Logged out!");
     }
   };
@@ -76,7 +78,6 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
             <RxCaretLeft className="text-white" size={35} />
           </button>
           <button
-            onClick={() => router.forward()}
             className="
             rounded-full 
             bg-black 
@@ -91,6 +92,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         </div>
         <div className="flex md:hidden gap-x-2 items-center">
           <button
+            onClick= {() => router.push("/")}
             className="
             rounded-full
             p-2
@@ -104,6 +106,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
             <HiHome className="text-black" size={20} />
           </button>
           <button
+            onClick= {() => router.push("/search")}
             className="
             rounded-full
             p-2
