@@ -11,10 +11,10 @@ import {
   AiFillStepForward,
 } from "react-icons/ai";
 
+import useSound from "use-sound";
 import LikeButton from "./LikeButton";
 import Slider from "./Slider";
 import usePlayer from "@/hooks/usePlayer";
-import useSound from "use-sound";
 
 interface PlayerContentProps {
   song: Song;
