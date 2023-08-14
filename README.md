@@ -26,9 +26,11 @@ Cloneify is a web application that recreates the beloved features of the PC vers
 
 - **Node.js**: The backend of Cloneify is built using Node.js to handle user authentication and data management.
 
-- **MongoDB**: User data and playlist information are stored securely in MongoDB, a popular NoSQL database.
+- **Supabase**: User data and playlist information are stored securely in Supabase, a popular database solution with a simple UI from Firebase.
 
 ## Getting Started
+
+Check it out here: https://clone-ify.vercel.app/
 
 To run Cloneify on your local machine, follow these steps:
 
@@ -61,10 +63,6 @@ To run Cloneify on your local machine, follow these steps:
    ```
 
 6. Open your web browser and visit `http://localhost:3000` to access Cloneify.
-
-## Contributions and Issues
-
-We welcome contributions from the community to make Cloneify even better! If you find any bugs or have suggestions for new features, please feel free to open an issue or submit a pull request.
 
 ## License
 
