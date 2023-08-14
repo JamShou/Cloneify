@@ -14,7 +14,7 @@ import {
 import LikeButton from "./LikeButton";
 import Slider from "./Slider";
 import usePlayer from "@/hooks/usePlayer";
-import useSound from 'use-sound';
+import useSound from "use-sound";
 
 interface PlayerContentProps {
   song: Song;
