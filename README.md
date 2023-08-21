@@ -16,7 +16,7 @@ Cloneify is a web application that recreates the beloved features of the PC vers
 
 - **Responsive Design**: Enjoy the same smooth experience on any device, whether it's a desktop, tablet, or smartphone.
 
-## Technologies Used
+## Technolog  dies Used
 
 - **Next.js**: Next.js powers the server-rendered React components, enabling faster page loads and improved SEO.
 
